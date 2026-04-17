@@ -1,2 +1,2 @@
 # OpenPDF
-An opensource PDF Encoder
+An opensource cross platform PDF Encoder 
