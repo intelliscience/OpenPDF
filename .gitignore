@@ -5,6 +5,7 @@ dist/
 *.exe
 *.bin
 *.app
+openpdf-*
 
 # Python
 __pycache__/
