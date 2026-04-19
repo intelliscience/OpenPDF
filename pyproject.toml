@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openpdf"
+version = "1.0.0"
+authors = [
+  { name="Fjord Enzo Bertrand-Helmgens" },
+]
+description = "A secure, portable Text-to-PDF engine with 128-bit encryption."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pypdf>=5.0.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business",
+]
+
+[project.scripts]
+openpdf = "openpdf.core:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
