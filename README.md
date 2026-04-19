@@ -13,7 +13,7 @@ pip install openpdf
 You can use it directly from your terminal:
 
 ```bash
-openpdf --text input.txt --out secure.pdf --password "your-password"
+openpdf --text input.txt --out secure.pdf --password="your-password"
 ```
 
 ## Features
