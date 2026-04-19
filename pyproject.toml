@@ -1,24 +1,27 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "openpdf"
-version = "0.0.1"
-authors = [
-  { name="Fjord Enzo Bertrand-Helmgens" },
-]
-description = "A secure, portable Text-to-PDF engine with 128-bit encryption."
+version = "0.0.2"
+description = "A professional text-to-PDF compiler with AES-128 encryption"
 readme = "README.md"
 requires-python = ">=3.8"
-dependencies = [
-    "pypdf>=5.0.0",
+license = {text = "GPL-3.0-only"}
+authors = [
+    {name = "Fjord Enzo Bertrand-Helmgens"}
 ]
 classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Topic :: Office/Business",
+    "Topic :: Text Processing :: Filters",
+]
+dependencies = [
+    "pypdf>=4.0.0",
 ]
 
 [project.scripts]
